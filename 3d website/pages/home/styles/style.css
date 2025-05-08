@@ -1,0 +1,247 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to bottom, rgba(3, 20, 81, 1), rgba(103, 11, 143, 1));
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    height: 2200px;
+}
+
+h1  {
+    color: white;
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+p {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: 100;
+
+}
+
+
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.header h1 {
+    margin-left: 5%;
+    font-size: 3rem;
+    font-weight: 300;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-left: 35%;
+    margin-top: 2%;
+    z-index: 999;
+
+
+}
+
+nav a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.10rem;
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 4px;
+    background-color: #e0e5e7;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+
+nav a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.btn-signin {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    align-items: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    font-weight: 500;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.btn-signin:hover {
+    background-color: #4448b8;
+    transition: background-color 0.3s ease;
+    color: #ffffff;
+    scale: 1.1 ;
+    transition: 0.5s ease;	
+}
+
+h1:hover {
+    color: #4448b8;
+    transition: color 0.3s ease;
+    scale: 1.1 ;
+    transition: 0.5s ease;	
+}
+
+
+
+
+
+
+
+
+.content { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 4%;
+}
+
+.content2 { 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 5%;
+}
+
+.design {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    border-radius: 30px; 
+    
+}
+
+.design2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    border-radius: 30px; 
+}
+
+.design img {
+    object-fit: cover; 
+    border-radius: 30px; 
+}
+
+.design2 img {
+    object-fit: cover; 
+    border-radius: 30px; 
+}
+
+.designtext {
+    position: absolute;
+    top: 65%;
+    left: 15%;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.designtext2 {
+    position: absolute;
+    top: 78%;
+    left: 15%;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.buttons {
+    display: flex;
+    position: absolute;
+    top: 85%;
+    left: 15%;
+    scale: 1.2;
+}
+
+.buttons2 {
+    display: flex;
+    position: absolute;
+    top: 90%;
+    left: 15%;
+    scale: 1.2;
+}
+
+.seemore{
+    background-color: #2d48e5;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 300;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+.seemore:hover {
+    background-color: #5d2cff;
+    transition: background-color 0.3s ease;
+    color: #ffffff;
+    scale: 1.1 ;
+    transition:  0.5s ease;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
